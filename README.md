@@ -7,7 +7,7 @@ REQUIREMENTS:
 -------------
 - MinGW with g++ must be installed and available in your system PATH.
 - Place this script in a folder containing the following structure:
-
+```
     freeglut\
         ├── include\GL\*.h
         ├── lib\x64\*.a           (for 64-bit)
@@ -19,17 +19,18 @@ REQUIREMENTS:
         ├── libs\Win64\*.a, *.lib (for 64-bit)
         ├── libs\Win32\*.a, *.lib (for 32-bit)
         └── oalinst.exe           (optional OpenAL installer)
-
+```
 USAGE:
 ------
 1. Right-click `install.bat` and select "Run as administrator" (or run from terminal with admin rights).
 
 2. Choose what you want to install:
+    ```
     [1] FreeGLUT only
     [2] OpenAL only
     [3] Both
-
-3. The script will:
+    ```
+4. The script will:
     - Detect your MinGW installation and architecture
     - Copy relevant header and library files
     - (If OpenAL is selected) silently run the OpenAL installer if available
